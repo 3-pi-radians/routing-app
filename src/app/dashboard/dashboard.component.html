@@ -1,0 +1,16 @@
+<h1>This is the test dashboard</h1>
+<p>Let's explore somethings about angular routing</p>
+
+<div>
+  <p>The following are different examples of routings:</p>
+  <ul>
+    <li><a [routerLink]="['basic-routing']" routerLinkActive="active">Basic Routing</a></li>
+    <li><a (click)="basicRoute()" routerLinkActive="active">Basic Routing using without a tag</a></li>
+    <li><a (click)="routeWithId()">Routing with some id</a></li>
+    <li><a routerLink="nested-1" routerLinkActive="active">Nested-1</a></li>
+    <li><a routerLink="nested-2" routerLinkActive="active">Nested-2</a></li>
+  </ul>
+  <hr>
+  <p>This is about lazy loading: </p>
+  <a routerLink="lazy-load" routerLinkActive="active">Click Here to go!</a>
+</div>
